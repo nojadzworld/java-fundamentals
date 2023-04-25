@@ -8,12 +8,35 @@ public class Restaurant {
     private List<Review> reviews;
     private Map<String, Review> reviewMap;
     private double averageRating;
+    private int stars;
+    private int priceCategory;
 
-    public Restaurant(String name) {
+    public Restaurant(String name, int priceCategory) {
         this.name = name;
+        if (priceCategory < 0 || priceCategory > 5) {
+            throw new IllegalArgumentException("Price category must be in between 0 and 5");
+        }
         this.reviews = new ArrayList<>();
         this.reviewMap = new HashMap<>();
         this.averageRating = 0.0;
+        this.stars = stars;
+        this.priceCategory = priceCategory;
+    }
+
+    public int getStars() {
+        return stars;
+    }
+
+    public void setStars(int stars) {
+        this.stars = stars;
+    }
+
+    public int getPriceCategory() {
+        return priceCategory;
+    }
+
+    public void setPriceCategory(int priceCategory) {
+        this.priceCategory = priceCategory;
     }
 
     public String getName() {

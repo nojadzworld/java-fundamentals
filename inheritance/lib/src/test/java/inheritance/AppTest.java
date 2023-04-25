@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class AppTest {
     @Test
     public void testAddReview() {
-        Restaurant restaurant = new Restaurant("Pizza Palace");
+        Restaurant restaurant = new Restaurant("Pizza Palace", 2);
         Review review = new Review("Great pizza!", "Alice", 5, restaurant);
         assertEquals(1, restaurant.getReviews().size());
         assertEquals(review, restaurant.getReviews().get(0));
@@ -18,7 +18,7 @@ class AppTest {
     }
     @Test
     public void testAddDuplicateReview() {
-        Restaurant restaurant = new Restaurant("Pizza Palace");
+        Restaurant restaurant = new Restaurant("Pizza Palace", 2);
         Review review1 = new Review("Great pizza!", "Alice", 5, restaurant);
         Review review2 = new Review("Bad pizza!", "Alice", 1, restaurant);
         assertEquals(1, restaurant.getReviews().size());
@@ -29,7 +29,7 @@ class AppTest {
 
     @Test
     public void testCalculateAverageRating() {
-        Restaurant restaurant = new Restaurant("Pizza Palace");
+        Restaurant restaurant = new Restaurant("Pizza Palace", 2);
         Review review1 = new Review("Great pizza!", "Alice", 5, restaurant);
         Review review2 = new Review("Decent pizza.", "Bob", 3, restaurant);
         Review review3 = new Review("Bad pizza!", "Charlie", 1, restaurant);
