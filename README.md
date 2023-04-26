@@ -52,7 +52,7 @@ Created by: DaJon Ewing
 3. Linter    
     * Write a method that reads a JavaScript file with a given Path, and generates an error message whenever it finds a line that doesn’t end in a semi-colon.
 
-## Composition and Inheritance, Part 1
+## Composition and Inheritance, Part 1 (Lab 06)
 
 This lab is dedicated to Composition and Inheritance.
 
@@ -146,3 +146,98 @@ This lab is dedicated to Composition and Inheritance.
 └── settings.gradle
 ```
 
+## Composition and Inheritance, Part 2 (Lab 07)
+
+```
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradlew
+├── gradlew.bat
+├── lib
+│   ├── bin
+│   │   ├── main
+│   │   │   └── inheritance
+│   │   │       ├── App.class
+│   │   │       ├── Restaurant.class
+│   │   │       └── Review.class
+│   │   └── test
+│   │       └── inheritance
+│   │           └── AppTest.class
+│   ├── build
+│   │   ├── classes
+│   │   │   └── java
+│   │   │       ├── main
+│   │   │       │   └── inheritance
+│   │   │       │       ├── App.class
+│   │   │       │       ├── Restaurant.class
+│   │   │       │       └── Review.class
+│   │   │       └── test
+│   │   │           └── inheritance
+│   │   │               └── AppTest.class
+│   │   ├── generated
+│   │   │   └── sources
+│   │   │       ├── annotationProcessor
+│   │   │       │   └── java
+│   │   │       │       ├── main
+│   │   │       │       └── test
+│   │   │       └── headers
+│   │   │           └── java
+│   │   │               ├── main
+│   │   │               └── test
+│   │   ├── reports
+│   │   │   └── tests
+│   │   │       └── test
+│   │   │           ├── classes
+│   │   │           │   └── inheritance.AppTest.html
+│   │   │           ├── css
+│   │   │           │   ├── base-style.css
+│   │   │           │   └── style.css
+│   │   │           ├── index.html
+│   │   │           ├── js
+│   │   │           │   └── report.js
+│   │   │           └── packages
+│   │   │               └── inheritance.html
+│   │   ├── test-results
+│   │   │   └── test
+│   │   │       ├── TEST-inheritance.AppTest.xml
+│   │   │       └── binary
+│   │   │           ├── output.bin
+│   │   │           ├── output.bin.idx
+│   │   │           └── results.bin
+│   │   └── tmp
+│   │       ├── compileJava
+│   │       │   ├── compileTransaction
+│   │       │   │   ├── backup-dir
+│   │       │   │   └── stash-dir
+│   │       │   │       ├── Restaurant.class.uniqueId1
+│   │       │   │       └── Review.class.uniqueId0
+│   │       │   └── previous-compilation-data.bin
+│   │       ├── compileTestJava
+│   │       │   ├── compileTransaction
+│   │       │   │   ├── backup-dir
+│   │       │   │   └── stash-dir
+│   │       │   │       └── AppTest.class.uniqueId0
+│   │       │   └── previous-compilation-data.bin
+│   │       └── test
+│   ├── build.gradle
+│   └── src
+│       ├── main
+│       │   ├── java
+│       │   │   └── inheritance
+│       │   │       ├── Place.java
+│       │   │       ├── Restaurant.java
+│       │   │       ├── Review.java
+│       │   │       ├── Shop.java
+│       │   │       └── Theater.java
+│       │   └── resources
+│       └── test
+│           ├── java
+│           │   └── inheritance
+│           │       ├── AppTest.java
+│           │       ├── RestaurantTest.java
+│           │       └── ReviewTest.java
+│           └── resources
+└── settings.gradle
+```
